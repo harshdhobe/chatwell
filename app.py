@@ -166,8 +166,10 @@ Answer:""",
 def load_rag_stack():
     if not HUGGINGFACEHUB_API_TOKEN:
         raise RuntimeError(
-            "Hugging Face API token not found. Add to `.env`:\n"
-            "HUGGINGFACEHUB_API_TOKEN=hf_your_token_here"
+            "Hugging Face API token not found.\n\n"
+            "Streamlit Cloud: open Manage app → Settings → Secrets and add:\n"
+            'HUGGINGFACEHUB_API_TOKEN = "hf_your_token_here"\n\n'
+            "Local: add the same line to `.env` in the project folder."
         )
     validate_hf_token(HUGGINGFACEHUB_API_TOKEN)
 
