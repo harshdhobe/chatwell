@@ -1,0 +1,30 @@
+# Environment variables (sensitive data)
+.env
+.env.*
+!.env.example
+
+# Virtual environments
+.venv/
+.venv
+env/
+env
+venv/
+venv
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Streamlit secrets (local only)
+.streamlit/secrets.toml
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
